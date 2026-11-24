@@ -39,6 +39,7 @@ Question in → route → fetch (docs or order row) → check grounding → answ
 ## Run
 ```bash
 cp .env.example .env                         # set LLM_MODEL from `ollama list`, GUARD_THRESHOLD=0.7
+mkdir data
 docker compose up -d db qdrant
 pip install -r requirements.txt
 PYTHONPATH=. python scripts/seed.py
